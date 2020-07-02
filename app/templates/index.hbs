@@ -6,9 +6,10 @@
 
 <div class="rentals">
   <ul class="results">
-    <li><Rental /></li>
-    <li><Rental /></li>
-    <li><Rental /></li>
+    {{!-- for loop --}}
+    {{#each @model as |rental|}}
+      <li><Rental @rental={{rental}}/></li>
+    {{/each}}
   </ul>
 </div>
 
